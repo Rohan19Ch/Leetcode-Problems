@@ -1,3 +1,26 @@
+"""
+LeetCode Problem 102: Binary Tree Level Order Traversal
+
+Problem Description:
+Given the root of a binary tree, return the level order traversal of its nodes' values.
+(i.e., from left to right, level by level).
+
+Time Complexity: O(n) where n is the number of nodes
+Space Complexity: O(n) for the queue and result array
+
+Example:
+Input: root = [3,9,20,null,null,15,7]
+Output: [[3],[9,20],[15,7]]
+
+Input: root = [1]
+Output: [[1]]
+
+Input: root = []
+Output: []
+
+Approach: Standard BFS (Breadth-First Search) using a queue.
+"""
+
 def levelOrder(self, root: TreeNode) -> List[List[int]]:
         if root == None:
             return []
